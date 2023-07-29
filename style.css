@@ -1,0 +1,71 @@
+@charset "utf-8";
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+html,body{
+    height: 100vh;
+    width: 100vw;
+    background-color: black;
+    
+}
+
+body{
+ /*   
+   Shorthand - background
+                color > image > position > repeat > [size] > attachment   
+    */                         
+    background: black url('imagens/fundo-madeira.jpg') top center no-repeat fixed;
+    background-size: cover;
+}
+
+
+main{
+    
+    position: relative;
+    height: 100vh;
+    
+}
+
+section#cel{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+
+    width: 311px;
+    height: 677px;
+    border-radius: 40px;
+    background:url('/imagens/frame-phone.png') center center no-repeat fixed;
+    background-size: cover;
+}
+
+iframe#tela{
+    position: relative;
+    top: 18px;
+    left: 9px;
+    width: 289px;
+    height: 632px;
+    border-radius: 30px;
+}
+section#social a{
+    display: flex;
+    justify-content: end;
+    color: rgba(0, 0, 0, 0.541);
+}
+section#social a img{
+    border-radius: 50%;
+    width: 50px;
+    margin: 10px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.404);
+    box-sizing: border-box;
+}
+
+section#social a img:hover{
+    border: 2px solid rgba(255, 255, 255, 0.548);
+    transform: translate(-3px, -3px);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.767);
+    transition: transform 0.2s, border 0.5s;
+}
